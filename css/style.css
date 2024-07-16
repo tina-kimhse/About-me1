@@ -1,18 +1,38 @@
 @charset "utf-8";
 
-/*1. 공용 선책자 or 전체 선택자*/
-/*스차일 초기화 ==> ESS RESET */
-/* 선택자 문법(Selector)
-클래스 선택자
-.avatar-img{ 속성: 값; ...}
-*/
-
-
-.avatar-img{
-    /* 배경-색상:핑크*/
-    margin:65px
+/* 1. 공용 선택자 or 전체 선택자*/
+/* 스타일 초기화 ==> CSS RESET */
+* {
+    margin: 0;
+    padding: 0
 }
-/*3.태그 선택자 */
+/* 2.클래스 선택자 - 문서 내에서 여러번 반복, 재사용*/
+.avatar-img {
+    /* 바깥-여백: 상하좌우 65픽셀씩 */
+    margin: 65px
+}
+.desc {
+    /* 글자색상: w */
+    color: #c0bebe;
+}
+.bg-mattgreen {
+background-color: #6E965D;
+padding: 20px 0; /* 안-여백: 상하20픽셀, 좌우0 */
+margin: 20px 0
+}
+.rounded-bar {
+    background-color: #6E965D; 
+    padding: 15px 0 
+    border-radius: 30px 
+}
+
+
+/* 5. 후손 선택자 */
+.bg-mattgreen h2 {
+    color: white
+}
+
+/* 3.태그 선택자 */
 h1 {
     text-align: center;
     text-transform: uppercase;
@@ -28,7 +48,10 @@ p {
     margin: 20px;
     text-align: center
 }
-/* 4.아이디 선택자  - 문서 내에서 여러번 반복, 재사용*/
+/* 4.아이디 선택자  - 문서 내에서 한번만 | 자주사용x */
+#text-white {
+    color: white;
+}
 #light {
-    color: #e0bebe
+    color: white;
 }
