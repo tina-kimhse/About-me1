@@ -6,6 +6,12 @@
     margin: 0;
     padding: 0
 }
+html {
+    scroll-behavior: smooth
+}
+a {
+    text-align: center
+}
 /* 2.클래스 선택자 - 문서 내에서 여러번 반복, 재사용*/
 .avatar-img {
     /* 바깥-여백: 상하좌우 65픽셀씩 */
@@ -21,14 +27,28 @@ padding: 20px 0; /* 안-여백: 상하20픽셀, 좌우0 */
 margin: 20px 0
 }
 .rounded-bar {
+
     background-color: #6E965D; 
     padding: 15px 0 
     border-radius: 30px 
 }
-
+.inline-block{
+display inline-block
+}
+.text-center {
+text-align: center
+}
+.block {
+    display: block
+} 
+.p-10 {
+    padding: 10px
+}
+.m-10 {margin: 10px
+}
 
 /* 5. 후손 선택자 */
-.bg-mattgreen h2 {
+.bg-beige h2 {
     color: white
 }
 
